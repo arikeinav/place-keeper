@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="body" onload="init()">
+
+    <h5>FORM</h5>
+
+
+    <form onsubmit="save(event)">
+        <label for="name">Name:  </label>
+        <input type="text" id="name" name="name" placeholder="First and last name"><br><br> Favorite color: <input type="color" id="color" name="color" form="frmRegister" value="#ff0000" /><br><br>
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" name="dob" /><br><br>
+        <label for="tob">Time of Birth: </label>
+        <input type="time" id="tob" name="tob" onchange="showAge(this.value)"><br><br>
+        <button> Save</button>
+    </form>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/pref-service.js"></script>
+    <script src="js/place-service.js"></script>
+    <script src="js/controller.js"></script>
+
+</body>
+
+</html>
